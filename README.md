@@ -1,31 +1,58 @@
-# HGSC TP53 Mutation Analysis
+# HGSC-TP53-Mutation-Analysis
 
-This repository contains the Jupyter Notebook `hgsc_tp53_primary_final (1).ipynb` for analyzing TP53 mutations in High-Grade Serous Carcinoma (HGSC).
+## 📌 Overview
+This project focuses on the **computational analysis of TP53 gene mutations** in **Ovarian High-Grade Serous Carcinoma (HGSC)**.  
+The goal is to identify **disease-associated mutations** using **machine learning (ML)** and **deep learning (DL)** models, supporting insights for **precision oncology**.
 
-## Contents
-- `hgsc_tp53_primary_final (1).ipynb`: Main notebook for TP53 mutation analysis in HGSC.
+---
 
-## Usage
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/karthikeyamaddu/HGSC-TP53-mutation-analysis.git
-   ```
-2. Open the notebook in Jupyter or VS Code.
-3. Follow the steps in the notebook to run the analysis.
+## 🔬 Research Motivation
+- **TP53** is the most frequently mutated gene in human cancers.  
+- In **HGSC**, TP53 mutations are nearly universal and play a critical role in tumor progression.  
+- Applying AI/ML can help **classify mutations, predict pathogenicity, and guide biomarker discovery**.
 
-## Requirements
-- Python 3.x
-- Jupyter Notebook
-- Required Python packages (see notebook for details)
+---
 
-## Project Overview
-This notebook provides:
-- Data preprocessing and visualization
-- Mutation analysis for TP53 in HGSC samples
-- Results interpretation and summary
+## ⚙️ Methodology
+1. **Data Preprocessing**  
+   - Cleaning mutation datasets  
+   - PCA for dimensionality reduction  
+   - MinMax scaling and normalization  
 
-## License
-This project is licensed under the MIT License.
+2. **Machine Learning Models**  
+   - Naïve Bayes  
+   - Logistic Regression  
+   - XGBoost with hyperparameter tuning  
+   - AutoML (TPOT) for automated pipeline optimization  
 
-## Author
-Karthikeya Maddu
+3. **Deep Learning Models**  
+   - Convolutional Neural Networks (CNNs)  
+   - Graph Neural Networks (GNNs) for mutation-gene network representation  
+
+4. **Evaluation**  
+   - Stratified cross-validation  
+   - Accuracy, F1-score, ROC-AUC metrics  
+   - Model interpretability for biological relevance  
+
+---
+
+## 🚀 Features
+- Comparative performance of classical ML vs. advanced DL models  
+- Automated pipeline search with **AutoML (TPOT)**  
+- Interpretable framework for **oncology insights**  
+- End-to-end Jupyter/Colab workflow  
+
+---
+
+## 📊 Results
+- Improved classification accuracy across ML and DL pipelines  
+- CNN and GNN models showed strong generalization for mutation classification  
+- AutoML discovered optimized pipelines outperforming baselines  
+
+---
+
+## 💻 How to Run
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/<your-username>/HGSC-TP53-mutation-analysis.git
+   cd HGSC-TP53-mutation-analysis
